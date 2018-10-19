@@ -1,5 +1,5 @@
 # YTHT
-Simple Python script that will silently run in the background waiting for the user to copy a YouTube link to their clipboard via ctrl+c and convert the link to a [hooktube](https://hooktube.com) link, circumventing ads and waiving the need to login to view content that would normally require a sign in. 
+Simple Python script that will silently run in the background waiting for the user to copy a YouTube link to their clipboard via ctrl+c and convert the link to a [hooktube](https://hooktube.com) link, circumventing ads and waiving the need to log in to view content that would normally require a sign in due to mature or controversial content.
 ## Installation and Use (Unix based Operating Systems) 
 `pip install -r requirements.txt`
 
