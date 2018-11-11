@@ -5,21 +5,24 @@ import sys
 
 
 def main():
+        print("STARTING. . .")
         keyboard.add_hotkey(
                 'ctrl+c',
                 paste_replacement_url_to_clipboard,
                 args=[parse_cli_args()]
         )
-        print("starting. . .")
         keyboard.wait('ctrl+q')
-        print("quitting. . .")
+        print("QUITTING. . .")
 
 
 def parse_cli_args():
         try:
-            if sys.argv[1] == '-ht' or '--hooktube':
+            if sys.argv[1] == '-ht' or sys.argv[1] == '--hooktube':
+                print('Hooktube mode initialized')
                 return 'hooktube.com'
             else:
+                print('Only accepts the -ht or --hooktube flag as an argument')
+                print('Defaulting to invidio.us mode')
                 return 'invidio.us'
         except IndexError:
             return 'invidio.us'
